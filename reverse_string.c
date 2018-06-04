@@ -10,7 +10,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int		ft_wd_ct(char *str)
+int	ft_wd_ct(char *str)
 {
 	int	wd_ct;
 
@@ -27,7 +27,7 @@ int		ft_wd_ct(char *str)
 	return (wd_ct);
 }
 
-int		ft_lt_ct(char *str)
+int	ft_lt_ct(char *str)
 {
 	int lt_ct;
 
@@ -57,8 +57,8 @@ void	ft_print_rev(char **word)
 char	**ft_split_and_rev(char *str)
 {
 	char	**word;
-	int		wd_ct;
-	int		tmp;
+	int	wd_ct;
+	int	tmp;
 
 	wd_ct = 0;
 	wd_ct = ft_wd_ct(str);
@@ -84,12 +84,10 @@ char	**ft_split_and_rev(char *str)
 	return (word);
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	if (argc == 2 && argv[1] != '\0')
-	{
 		ft_split_and_rev(argv[1]);
-	}
 	else
 		ft_putchar('\n');
 	return (0);
