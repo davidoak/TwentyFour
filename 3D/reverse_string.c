@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 #define IS_SPACE(c) ((c) == ' ' || (c) == '\t' || (c) == '\n')
 #define IS_END_LINE(c) ((c) == '\0')
