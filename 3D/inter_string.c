@@ -21,9 +21,9 @@ void	ft_inter(char *str1, char *str2, int *asc)
 	ft_putchar('\n');
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	int		asc[128];
+	int	asc[128];
 
 	if (argc == 3)
 		ft_inter(argv[1], argv[2], asc);
